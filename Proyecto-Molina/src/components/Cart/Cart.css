@@ -1,0 +1,34 @@
+
+.cart__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.cart__total {
+    color: rgb(254, 253, 253);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.cart__empty {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-success.checkout {
+    margin: 5px;
+    width: 10em;
+}
+
+
+.btn__start {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    background: linear-gradient(186deg, rgba(255,255,255,0.9) 0%, rgba(1,255,154,1) 52%, rgba(15,136,246,1) 100%);
+}

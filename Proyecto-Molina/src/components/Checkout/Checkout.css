@@ -1,0 +1,14 @@
+.order__id {
+    color: white;
+}
+
+.check__order {
+    color: white;
+}
+
+.checkout__form {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}

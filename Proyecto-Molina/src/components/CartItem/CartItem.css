@@ -1,0 +1,23 @@
+.card__item__final {
+    background: linear-gradient(186deg, rgba(255,255,255,0.9) 0%, rgba(1,255,154,1) 52%, rgba(15,136,246,1) 100%);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.picture__card__svg {
+    width: 100px;
+    height: 100px;
+}
+
+.cart__item__p {
+    color: rgb(13, 13, 14);
+    font-weight:600;
+    margin-top: 5px;
+    padding: 5px;
+} 
+
+.btn.btn-delete {
+    width: 100%;
+    background-color: #bb2d3b;
+    color: white;
+}

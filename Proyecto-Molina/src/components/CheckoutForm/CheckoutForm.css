@@ -1,0 +1,58 @@
+.form__checkout {
+    display: inline;
+    width: 100%;
+    max-width: 30em;
+}
+
+.form__dates {
+ display: flex;
+ justify-content: center;
+ min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    max-width: 30em;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.form__label {
+    color: #ffffff;
+    width: 100%;
+    max-width: 30em;
+    font-size: 1.2rem;
+}
+
+.btn-primary.button__order {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.form__label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form {
+    width: 100%;
+    border: none; 
+    border-bottom: 1px solid #0d6efd; 
+    background-color: transparent; 
+    color: #ffffff; 
+}
+
+.form::placeholder {
+    color: #ffffff93; 
+}
+
+.error-message {
+    color: rgb(249, 246, 246);
+    font-size: 2rem;
+    margin-top: 1em;
+    background-color: rgb(248, 6, 6);
+    border-radius: .2em;
+}
