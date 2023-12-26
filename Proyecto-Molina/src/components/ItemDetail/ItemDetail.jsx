@@ -26,7 +26,7 @@ const ItemDetail = ({id,name,img,category,description, price, stock})=>{
       <div className="bg-gray-800 p-4 rounded-lg shadow-md w-full">
         <div className="flex justify-center">
           <div className="w-2/3">
-            <h2 className="text-white text-3xl font-bold mb-4">{name}</h2>
+            <h2 className="text-white text-3xl font-bold mb-4 bg-gray-500/80 rounded-md">{name}</h2>
           </div>
         </div>
         <div className="flex flex-row">
@@ -36,31 +36,30 @@ const ItemDetail = ({id,name,img,category,description, price, stock})=>{
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="w-4/5">
+          <div className="flex flex-col justify-center w-4/5">
             <div className="mb-4">
               <h6 className="text-gray-300">Categoría: {category}</h6>
               <h6 className="text-gray-300">Descripción: {description}</h6>
               <h1 className="text-gray-300">Precio: ${price}.000</h1>
             </div>
             <div className="mb-4">
-              <a href="#" className="content">
+              
                 {quantityAdded > 0 ? (
-                  <Link to='/cart' className="buttoncart">
+                  <Link to='/cart' className="bg-gray-300 border border-green-700 rounded px-4 py-2 text-green-600 text-bold mt-2">
                     Terminar compra
                   </Link>
                 ) : (
                   <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                 )}
-              </a>
+              
             </div>
           </div>
           <div className="flex justify-center">
           <Link to='/'>
-            <button className="buttoncount">Volver</button>
+            <button className="text-blue-400 font-bold">Volver</button>
           </Link>
         </div>
         </div>
-       
         </div>
       </div>
     </div>

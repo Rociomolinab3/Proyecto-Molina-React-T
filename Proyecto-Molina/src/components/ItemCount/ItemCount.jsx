@@ -16,34 +16,22 @@ const ItemCount = ({stock,initial,onAdd}) =>{
      }
 
      return(
-        <div className="flex items-center justify-between">
-      <div className="flex items-center space-x-2 text-white">
-        <button
-          className="bg-gray-700 border border-gray-300 rounded px-2 py-1 font-bold"
-          onClick={decrement}
-        >
-          -
-        </button>
-        <h5>{quantity}</h5>
-        <button
-          className="bg-gray-700 border border-gray-300 rounded px-2 py-1 font-bold"
-          onClick={increment}
-        >
-          +
-        </button>
-      </div>
+      <>
       <div>
-        <button
-          className={`bg-gray-800 border border-green-500 rounded px-4 py-2 text-antiquewhite ${
-            !stock && 'opacity-50 cursor-not-allowed'
-          }`}
-          onClick={() => onAdd(quantity)}
-          disabled={!stock}
-        >
-          Agregar al carrito
-        </button>
+      <div className="controls flex justify-center items-center">  {/* Controles de cantidad */}
+      <button className="bg-gray-500 border border-green-800 rounded p-2 m-3 text-antiquewhite" onClick={decrement}>-</button>
+      <h4 className="text-white">{quantity}</h4>
+        <button className="bg-gray-500 border border-green-800 rounded p-2 m-3 text-antiquewhite" onClick={increment}>+</button>
       </div>
-    </div>
+      <div> 
+        <button className="bg-gray-300 border border-green-700 rounded px-4 py-2 text-white mt-2" onClick={() => onAdd(quantity)} disabled={!stock}>
+                    Agregar al carrito
+        </button>
+          </div>
+      </div>
+      
+      
+      </>
      )
 }
 
