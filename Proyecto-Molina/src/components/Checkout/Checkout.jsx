@@ -10,7 +10,7 @@ const Checkout = ()=>{
     const [ orderId, setOrderId ] =useState('')
 
     const {cart, total, clearCart} = useContext(CartContext);
-    
+    console.log("total el checkout", total)
     const totalAmount = cart.reduce ((acc, item) => acc+item.price*item.quantity,0);
     
     const createOrder = async ({name,phone,email}) =>{
