@@ -36,7 +36,7 @@ const ItemListContainer = () =>{
         }, [categoryId]);
 
     return(
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
             {
               loading ? <p>Cargando...</p> :
                 products.map((product)=>(

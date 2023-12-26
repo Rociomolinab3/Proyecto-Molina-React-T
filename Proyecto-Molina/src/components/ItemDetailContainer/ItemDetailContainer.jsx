@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import {getProductById} from "../../asyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
@@ -16,9 +15,10 @@ const ItemDetailContainer = () => {
             try {
                 const docData= await getDoc(queryDoc);
                 if(docData.exists()){
+                    console.log("datos del producto", docData.data)
                     setProduct({
                         id:docData.id,
-                        ...docData()
+                        ...docData.data()
                     });
                 }
             } catch (error) {
@@ -38,7 +38,7 @@ const ItemDetailContainer = () => {
     return(
         <div className="flex bg-gray-700 justify-center">
          {product ? <ItemDetail {...product} /> :
-         <p>Cargandooooo...</p>
+         <p>Cargando detalle del producto...</p>
          }   
         </div>
     )
